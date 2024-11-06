@@ -10,7 +10,6 @@ export default function Home() {
       mainRef.current.appendChild(sundialModule.rendererDomElement)
       sundialModule.animate()
     }
-
   }, [mainRef])
 
   return (
