@@ -1,6 +1,5 @@
 'use client'
 import *  as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 // SCENE
 const scene = new THREE.Scene();
@@ -21,9 +20,6 @@ if (typeof window !== 'undefined') {
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.shadowMap.enabled = true
-    
-    // CONTROLS
-    const controls = new OrbitControls(camera, renderer.domElement);
     
     // RESIZE HAMDLER
     function onWindowResize() {
